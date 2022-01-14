@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+
+body , html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100%;
+}
+
+.container.home {
+    height: 100vh;
+    background-color: rgb(40 , 40 ,40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.container.home img {
+    width: 300px;
+    flex : 0 1 200px;
+    border: 10px solid none;
+    border-radius: 50%;
+}
+.container.home .sm {
+    display: grid;
+    grid-template: 4 / repeat(12 , 1fr);
+    grid-template-areas: 
+        "g g g c c c d d d f f f";
+    
+
+}
+
+.container.home p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Ubuntu' , 'Courier New' , Courier , monospace;
+}
+.container.home .sm a {
+    display: block;
+    padding: 35px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.container.home .sm a:nth-child(1) {
+    grid-area: g;
+    color: red;
+}
+.container.home .sm a:nth-child(2) {
+    grid-area: c;
+    color: #fff;
+}
+.container.home .sm a:nth-child(3) {
+    color: royalblue;
+    grid-area: d;
+}
+.container.home .sm a:nth-child(4) {
+    color: steelblue;
+    grid-area: f;
+}
+.container.home .sm a:hover {
+    transition: 0.5s;
+    font-size: 2.7em;
+    padding: 20px 35px 20px 35px;
+
+}
+@media (max-width:400px) {
+    .container.home .sm a {
+        padding: 20px;
+    }
+    .container.home .sm a:hover {
+        transition: 0.5s;
+        font-size: 2.7em;
+        padding: 10px 20px 10px 20px;
+    }
+    .container.home img {
+        width: 200px;
+    }
+}
