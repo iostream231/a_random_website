@@ -2,9 +2,56 @@
 
 
 
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0 , 0 , 0 ,0.7);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.navbar a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.navbar a[data-menu="1"]{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .navbar a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar a[rel="link-nav"] {
+        display: none;
+        animation: link-animation linear 0.2s;
+    }
+    body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer;}
+}
+@keyframes  link-animation{
+    0% {
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 body , html {
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu' , monospace;
 }
 body {
     height: 100%;
@@ -23,6 +70,11 @@ body {
     flex : 0 1 200px;
     border: 10px solid none;
     border-radius: 50%;
+}
+.container.home img:hover {
+    transition: 400ms;
+    transform: scale(1.1);
+    box-shadow: rgb(10, 10, 10) 8px ;
 }
 .container.home .sm {
     display: grid;
@@ -61,9 +113,8 @@ body {
     grid-area: f;
 }
 .container.home .sm a:hover {
-    transition: 0.5s;
-    font-size: 2.7em;
-    padding: 20px 35px 20px 35px;
+    transition: 0.2s;
+    animation: rotate linear 0.5s;
 
 }
 @media (max-width:400px) {
@@ -77,5 +128,13 @@ body {
     }
     .container.home img {
         width: 200px;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
