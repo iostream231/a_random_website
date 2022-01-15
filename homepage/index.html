@@ -10,9 +10,29 @@
     <title>HomePage</title>
 </head>
 <body>
+    <!--LOL-->
+    <nav class="navbar">
+        <a data-menu="1" rel="link-menu"><i class="fas fa-bars"></i> </a>
+        <a href=".home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a>
+        <a href=".info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a>
+        <a href=".proj" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a>
+        <a href=".cnt" rel="link-nav"><i class="fas fa-comments"></i> Contact</a>
+    </nav>
+    <script>
+        let other_links = [];
+        document.querySelector('a[rel="link-menu"] i').addEventListener("click" , function() {
+            if(document.querySelector('.navbar a[rel="link-nav"]').style.display === "none") {
+                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]');
+                for(let i = 0 ; i <= other_links.length ; i++) { other_links[i].style.display = "block";};
+            } else {
+                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]')
+                for(let n = 0 ; n <= other_links.length ; n++) { other_links[n].style.display = "none";};
+            };
+        });
+    </script>
     <div class="container home">
         <img src="./pfp.jpg" alt="" class="img">
-	<p>Hi There! I'm {some name}</p>
+	<p>Hi There! I'm iostream231</p>
         <div class="sm">
             <a href="about:blank" target="_blank" class="fab fa-youtube"></a>
             <a href="about:blank" target="_blank" class="fab fa-github"></a>
