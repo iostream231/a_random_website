@@ -21,7 +21,7 @@
     <script>
         let other_links = [];
         document.querySelector('a[rel="link-menu"] i').addEventListener("click" , function() {
-            if(document.querySelector('.navbar a[rel="link-nav"]').style.display === "none") {
+            if(document.querySelector('.navbar a[rel="link-nav"]').style.display === "none" || document.querySelector('.navbar a[rel="link-nav"]').style.display === "") {
                 other_links = document.querySelectorAll('.navbar a[rel="link-nav"]');
                 for(let i = 0 ; i <= other_links.length ; i++) { other_links[i].style.display = "block";};
             } else {

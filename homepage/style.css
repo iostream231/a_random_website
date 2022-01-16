@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
-
+:root {
+    --display : "block";
+}
 
 .navbar {
     position: fixed;
@@ -32,13 +34,15 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    
+    :root{
+        --display: none;
+    }
     .navbar a[rel="link-nav"] {
-        display: none;
         animation: link-animation linear 0.2s;
     }
-    body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer;}
+    body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer; color: #fff;}
 }
+
 @keyframes  link-animation{
     0% {
         transform: translateY(-200px);
