@@ -31,10 +31,8 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    :root{
-        --display: none;
-    }
     .navbar a[rel="link-nav"] {
+        display: none;
         animation: link-animation linear 0.2s;
     }
     body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer; color: #fff;}
