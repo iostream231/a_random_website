@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.container.projects {
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 0.1);
+    border-radius: 10px;
+}
+.container.projects p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 300;
+}
+.container.projects h1{
+    color: #fff;
+    align-self: flex-start;
+}
+.container.projects p:hover{
+    transition: 0.3s;
+    transform: scale(1.4);
+    cursor: default;
+}
+

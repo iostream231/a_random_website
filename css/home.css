@@ -47,15 +47,6 @@
     }
 }
 
-body , html {
-    padding: 0;
-    margin: 0;
-    font-family: 'Ubuntu' , monospace;
-}
-body {
-    height: 100%;
-    background-color: rgb(40 , 40 ,40);
-}
 
 .container.home {
     height: 100vh;

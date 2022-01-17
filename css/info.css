@@ -40,6 +40,7 @@
     border-bottom: 1px solid gray;
     color: #fff;
 
+
 }
 .container.info .footer{
     grid-area: g;
@@ -77,6 +78,7 @@
         width: 200px;
         height: auto;
     }
+    
 }
 .container.info h1{
     background: #2193b0;  
@@ -87,3 +89,22 @@
     color: transparent;
 }
 
+.neon-btn{
+    display: inline-block;
+    outline: none;
+    border : 2px solid #48dbfb;
+    color: #48dbfb;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.neon-btn:hover{
+    color: #000;
+    background-color: #48dbfb;
+    transition: 0.4s;
+}

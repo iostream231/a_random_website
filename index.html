@@ -1,0 +1,107 @@
+<!--TODO : Add a navbar for future pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HomePage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a data-menu="1" rel="link-menu"><i class="fas fa-bars"></i> </a>
+        <a style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a>
+        <a style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a>
+        <a style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a>
+        <a style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a>
+    </nav>
+    <script>
+        let other_links = [];
+        document.querySelector('a[rel="link-menu"] i').addEventListener("click" , function() {
+            if(document.querySelector('.navbar a[rel="link-nav"]').style.display === "none" || document.querySelector('.navbar a[rel="link-nav"]').style.display === "") {
+                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]');
+                for(let i = 0 ; i <= other_links.length ; i++) { other_links[i].style.display = "block";};
+            } else {
+                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]')
+                for(let n = 0 ; n <= other_links.length ; n++) { other_links[n].style.display = "none";};
+            };
+        });
+
+
+    </script>
+    <div class="container home" id="home">
+        <img src="./pfp.jpg" alt="" class="img">
+	<p>Hi There! I'm iostream231</p>
+        <div class="sm">
+            <a class="fab fa-youtube"></a>
+            <a href="https://github.com/iostream231" target="_blank" class="fab fa-github"></a>
+            <a class="fab fa-discord"></a>
+            <!--<a href="about:blank"  target="_blank" class="fab fa-twitter"></a>-->
+        </div>
+        <script>
+        document.querySelector(".fab.fa-discord").addEventListener('click' , () => {navigator.clipboard.writeText("Undefined101#4406"); alert("Discord tag copied");});
+        document.querySelector(".fab.fa-youtube").addEventListener('click' , () => {alert("Well... I don't have channel yet \nBye ._.");});
+        </script>
+    </div>
+
+    <hr>
+    
+    <!--Info Section-->
+    <!--TODO : This Info Section looks shit-->
+    <div class="container info" id="info">
+        <div class="title-inf"><h1>About Mee</h1></div>
+        <div class="img-section">
+            <img src="./pfp.jpg" alt="some weird anime dude I found on the internet">
+        </div>
+        <div class="about-section">Hi, I am <strong>iostream231</strong>. I am from <p class="underline-ws" style="color: red;display: inline;">Morocco 🇲🇦</p>. I am learning web-developement and I made this website to test my skills and upgrade them, I have Some experience in <a href="" class="underline-ws" style="display: inline; color: royalblue;text-decoration: none;">C</a> , <a href="" class="underline-ws" style="display: inline; color: yellowgreen;text-decoration: none;">Python</a> and <a href="" class="underline-ws" style="display: inline;text-decoration: none; color: orange;"><strong>JS</strong></a>. I am currently 15 yrs old and I like playing games and looking at memes :D.</div>
+        <div class="footer"><p>If you have a hint ,you are experienced or you just wanna talk feel free to <button class="neon-btn">Contact Me</button></p></div>
+        <script>
+            document.querySelector(".neon-btn").addEventListener('click' , ()=>{
+                document.querySelector(".container.contacts").scrollIntoView({behavior:"smooth"});
+            });
+        </script>
+    </div>
+    <hr>
+    <!--Projects Section-->
+    <h1 class="title-bd">Projects</h1>
+    <div class="container projects" id="projects">
+        <p>COMING LATER</p>
+    </div>
+
+    <hr>
+    <!--Contacts Section-->
+    <h1 class="title-bd">Contacts</h1>
+    <div class="container contacts">
+        <div class="sm">
+            <p>Social Media :</p>
+            <a class="fab fa-youtube"></a>
+            <a href="https://github.com/iostream231" target="_blank" class="fab fa-github"></a>
+            <a class="fab fa-discord"></a>
+            <!--<a href="about:blank"  target="_blank" class="fab fa-twitter"></a>-->
+        </div>
+        <div class="email">
+            <p>Other :</p>
+
+            <h4 style="color: #fff;"><i class="fas fa-envelope" style="color: #fff; font-size: 25px; display: inline;"></i> coviowo23@protonmail.com</h4>
+            
+        </div>
+    </div>
+    <script>
+        document.querySelector(".container.contacts .fab.fa-discord").addEventListener('click' , () => {navigator.clipboard.writeText("Undefined101#4406"); alert("Discord tag copied");});
+        document.querySelector(".container.contacts .fab.fa-youtube").addEventListener('click' , () => {alert("Well... I don't have channel yet \nBye ._.");});
+
+        document.querySelector('.navbar a[name="home"]').addEventListener('click' , () => {document.querySelector(".container.home").scrollIntoView({behavior:"smooth"})})
+        document.querySelector('.navbar a[name="info"]').addEventListener('click' , () => {document.querySelector(".container.info").scrollIntoView({behavior:"smooth"})})
+        document.querySelector('.navbar a[name="projects"]').addEventListener('click' , () => {document.querySelector(".container.projects").scrollIntoView({behavior:"smooth"})})
+        document.querySelector('.navbar a[name="contacts"]').addEventListener('click' , () => {document.querySelector(".container.contacts").scrollIntoView({behavior:"smooth"})})
+    </script>
+
+</body>
+</html>
+<!--Funny Comment-->
