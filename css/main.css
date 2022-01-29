@@ -18,6 +18,7 @@ hr {
     margin-bottom: 30px;
     border: none;
     background-color: rgb(180, 180, 180);
+    z-index: -1;
 
 }
 .title-bd{text-align: center;margin-top: 40px;color: #fff;}

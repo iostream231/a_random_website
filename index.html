@@ -16,10 +16,10 @@
 <body>
     <nav class="navbar">
         <a data-menu="1" rel="link-menu"><i class="fas fa-bars"></i> </a>
-        <a style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a>
-        <a style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a>
-        <a style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a>
-        <a style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a>
+        <a onclick="document.querySelector('.container.home').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a>
+        <a onclick="document.querySelector('.abt-tl').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a>
+        <a onclick="document.querySelector('.container.projects').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a>
+        <a onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a>
     </nav>
     <script>
         let other_links = [];
@@ -39,34 +39,34 @@
         <img src="./pfp.jpg" alt="" class="img">
 	<p>Hi There! I'm iostream231</p>
         <div class="sm">
-            <a class="fab fa-youtube"></a>
+            <a class="fab fa-youtube" onclick="alert('Well... I don\'t have channel yet \nBye ._.')"></a>
             <a href="https://github.com/iostream231" target="_blank" class="fab fa-github"></a>
-            <a class="fab fa-discord"></a>
+            <a class="fab fa-discord" onclick="navigator.clipboard.writeText('Undefined101#4406'); alert('Discord tag copied');"></a>
             <!--<a href="about:blank"  target="_blank" class="fab fa-twitter"></a>-->
         </div>
-        <script>
-        document.querySelector(".fab.fa-discord").addEventListener('click' , () => {navigator.clipboard.writeText("Undefined101#4406"); alert("Discord tag copied");});
-        document.querySelector(".fab.fa-youtube").addEventListener('click' , () => {alert("Well... I don't have channel yet \nBye ._.");});
-        </script>
     </div>
 
-    <hr>
-    
+
+    <hr style="display: none;">
     <!--Info Section-->
-    <!--TODO : This Info Section looks shit-->
-    <div class="container info" id="info">
-        <div class="title-inf"><h1>About Mee</h1></div>
-        <div class="img-section">
-            <img src="./pfp.jpg" alt="some weird anime dude I found on the internet">
+    <!--TODO : This Info Section looks *LESS* shit-->
+    <!--TODO : Make It More Responsive-->
+    <section class="section info">
+        <div class="curve1"></div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
         </div>
-        <div class="about-section">Hi, I am <strong>iostream231</strong>. I am from <p class="underline-ws" style="color: red;display: inline;">Morocco 🇲🇦</p>. I am learning web-developement and I made this website to test my skills and upgrade them, I have Some experience in <a href="" class="underline-ws" style="display: inline; color: royalblue;text-decoration: none;">C</a> , <a href="" class="underline-ws" style="display: inline; color: yellowgreen;text-decoration: none;">Python</a> and <a href="" class="underline-ws" style="display: inline;text-decoration: none; color: orange;"><strong>JS</strong></a>. I am currently 15 yrs old and I like playing games and looking at memes :D.</div>
-        <div class="footer"><p>If you have a hint ,you are experienced or you just wanna talk feel free to <button class="neon-btn">Contact Me</button></p></div>
-        <script>
-            document.querySelector(".neon-btn").addEventListener('click' , ()=>{
-                document.querySelector(".container.contacts").scrollIntoView({behavior:"smooth"});
-            });
-        </script>
-    </div>
+        <h1 class="title-bd abt-tl">About Me</h1>
+        <div class="container info" id="info">
+            <div class="img-section">
+                <img src="./pfp.jpg" alt="some weird anime dude I found on the internet">
+            </div>
+            <div class="about-section">Hi, I am <strong>iostream231</strong>. I am from <p class="underline-ws" style="color: red;display: inline;">Morocco 🇲🇦</p>. I am learning web-developement and I made this website to test my skills and upgrade them, I have Some experience in <a href="" class="underline-ws" style="display: inline; color: royalblue;text-decoration: none;">C</a> , <a href="" class="underline-ws" style="display: inline; color: yellowgreen;text-decoration: none;">Python</a> and <a href="" class="underline-ws" style="display: inline;text-decoration: none; color: orange;"><strong>JS</strong></a>. I am currently 15 yrs old and I like playing games and looking at memes :D.</div>
+            <div class="footer"><p>If you have a hint ,you are experienced or you just wanna talk feel free to : <button class="info-btn" onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'});">Contact Me</button></p></div>
+        </div>
+    </section>
     <hr>
     <!--Projects Section-->
     <h1 class="title-bd">Projects</h1>
@@ -80,9 +80,9 @@
     <div class="container contacts">
         <div class="sm">
             <p>Social Media :</p>
-            <a class="fab fa-youtube"></a>
+            <a class="fab fa-youtube" onclick="alert('Well... I don\'t have channel yet \nBye ._.')"></a>
             <a href="https://github.com/iostream231" target="_blank" class="fab fa-github"></a>
-            <a class="fab fa-discord"></a>
+            <a class="fab fa-discord" onclick="navigator.clipboard.writeText('Undefined101#4406'); alert('Discord tag copied');"></a>
             <!--<a href="about:blank"  target="_blank" class="fab fa-twitter"></a>-->
         </div>
         <div class="email">
@@ -92,15 +92,6 @@
             
         </div>
     </div>
-    <script>
-        document.querySelector(".container.contacts .fab.fa-discord").addEventListener('click' , () => {navigator.clipboard.writeText("Undefined101#4406"); alert("Discord tag copied");});
-        document.querySelector(".container.contacts .fab.fa-youtube").addEventListener('click' , () => {alert("Well... I don't have channel yet \nBye ._.");});
-
-        document.querySelector('.navbar a[name="home"]').addEventListener('click' , () => {document.querySelector(".container.home").scrollIntoView({behavior:"smooth"})})
-        document.querySelector('.navbar a[name="info"]').addEventListener('click' , () => {document.querySelector(".container.info").scrollIntoView({behavior:"smooth"})})
-        document.querySelector('.navbar a[name="projects"]').addEventListener('click' , () => {document.querySelector(".container.projects").scrollIntoView({behavior:"smooth"})})
-        document.querySelector('.navbar a[name="contacts"]').addEventListener('click' , () => {document.querySelector(".container.contacts").scrollIntoView({behavior:"smooth"})})
-    </script>
 
 </body>
 </html>

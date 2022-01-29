@@ -105,7 +105,7 @@
 }
 .container.home .sm a:hover {
     transition: 0.2s;
-    animation: rotate linear 0.5s;
+    animation: rotate 0.5s;
 
 }
 @media (max-width:400px) {
@@ -126,6 +126,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: scale(1.2) rotate(25deg);
     }
+
 }
