@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/info.css">
@@ -16,10 +17,11 @@
 <body>
     <nav class="navbar">
         <a data-menu="1" rel="link-menu"><i class="fas fa-bars"></i> </a>
-        <a onclick="document.querySelector('.container.home').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a>
-        <a onclick="document.querySelector('.abt-tl').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a>
-        <a onclick="document.querySelector('.container.projects').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a>
-        <a onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a>
+        <div class="link-dev"><a onclick="document.querySelector('.container.home').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a></div>
+        <div class="link-dev"><a onclick="document.querySelector('.abt-tl').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a></div>
+        <div class="link-dev"><a onclick="document.querySelector('.container.projects').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a></div>
+        <div class="link-dev"><a onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a></div>
+        <div class="them-dev"><a href="#" onclick="changeTheme()" rel="link-nav"><i class="fas fa-sun"></i></a></div>
     </nav>
     <script>
         let other_links = [];
@@ -88,7 +90,7 @@
         <div class="email">
             <p>Other :</p>
 
-            <h4 style="color: #fff;"><i class="fas fa-envelope" style="color: #fff; font-size: 25px; display: inline;"></i> coviowo23@protonmail.com</h4>
+            <h4 style="color: var(--txtcolor);"><i class="fas fa-envelope" style="color: var(--txtcolor); font-size: 25px; display: inline;"></i> coviowo23@protonmail.com</h4>
             
         </div>
     </div>

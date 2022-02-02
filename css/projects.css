@@ -12,13 +12,13 @@
     border-radius: 10px;
 }
 .container.projects p{
-    color: #fff;
+    color: var(--txtcolor);
     font-size: 20px;
     font-family: 'Raleway' , sans-serif;
     font-weight: 300;
 }
 .container.projects h1{
-    color: #fff;
+    color: var(--txtcolor);
     align-self: flex-start;
 }
 .container.projects p:hover{

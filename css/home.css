@@ -2,10 +2,12 @@
 
 
 
+
+
 .navbar {
     position: fixed;
     z-index: 1;
-    background-color: rgba(0 , 0 , 0 ,0.7);
+    background-color: var(--inbcolor);
     width: 100%;
     padding: 10px;
     display: flex;
@@ -14,7 +16,7 @@
 }
 
 .navbar a {
-    color: #fff;
+    color: var(--txtcolor);
     display: block;
     text-decoration: none;
 }
@@ -35,8 +37,43 @@
         display: none;
         animation: link-animation linear 0.2s;
     }
-    body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer; color: #fff;}
+    body .navbar a[data-menu="1"] { display: block; align-self: center; cursor: pointer; color: var(--txtcolor);}
 }
+
+.navbar a[rel="link-nav"]::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--txtcolor);
+    width: 10px;
+    height: 2px;
+    transform: translate(4px , 19px);
+}
+.navbar a[rel="link-nav"]:hover::before{
+    transition: 300ms;
+    display: block;
+    width: 5em;
+}
+
+
+
+.navbar .them-dev a::before{display: none;}
+.navbar .them-dev a:hover::before{display: none;}
+.navbar .them-dev a:active {animation: them-animation 1s linear;}
+
+@keyframes them-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 @keyframes  link-animation{
     0% {
@@ -50,7 +87,7 @@
 
 .container.home {
     height: 100vh;
-    background-color: rgb(40 , 40 ,40);
+    background-color: var(--bcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +97,7 @@
     width: 300px;
     flex : 0 1 200px;
     border: 10px solid none;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 .container.home img:hover {
     transition: 400ms;
@@ -78,7 +115,7 @@
 
 .container.home p {
     font-size: 20px;
-    color: #fff;
+    color: var(--txtcolor);
     font-family: 'Ubuntu' , 'Courier New' , Courier , monospace;
 }
 .container.home .sm a {
@@ -93,7 +130,7 @@
 }
 .container.home .sm a:nth-child(2) {
     grid-area: c;
-    color: #fff;
+    color: var(--txtcolor);
 }
 .container.home .sm a:nth-child(3) {
     color: royalblue;

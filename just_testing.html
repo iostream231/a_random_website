@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Test Text</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+            cursor: pointer;
+            display: block;
+            background : linear-gradient(to right, #f79d00, #64f38c);
+            background-clip: text;
+            color: transparent;
+        }
+        h1::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-color: red;
+            z-index: -1;
+            transform: translate(0% , 1.3em);
+            border-radius: 2px;
+        }
+        h1:hover::before{
+            content: "";
+            height: 10px;
+            transition: 500ms;
+            width: 6.5em;
+            z-index: -1;
+
+        }
+    </style>
+
+
+
+
+    <h1>Hello World</h1>
+    
+</body>
+</html>

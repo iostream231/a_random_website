@@ -1,3 +1,14 @@
+:root{
+    --bcolor: rgb(40, 40, 40);
+    --inbcolor: rgb(10 , 10 , 10);
+    --txtcolor: #fff;
+
+}
+
+*{
+    transition: 500ms;
+}
+
 body , html {
     padding: 0;
     margin: 0;
@@ -5,23 +16,23 @@ body , html {
 }
 body {
     height: 100%;
-    background-color: rgb(40 , 40 ,40);
+    background-color: var(--bcolor);
     display: flex;
     flex-direction: column;
 }
 hr {
-    color: rgb(180, 180, 180);
+    color: var(--txtcolor);
     width: 70%;
     margin: auto;
     height: 1px;
     margin-top: 60px;
     margin-bottom: 30px;
     border: none;
-    background-color: rgb(180, 180, 180);
+    background-color: var(--txtcolor);
     z-index: -1;
 
 }
-.title-bd{text-align: center;margin-top: 40px;color: #fff;}
+.title-bd{text-align: center;margin-top: 40px;color: var(--txtcolor);}
 
 a{
     cursor: pointer;

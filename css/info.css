@@ -10,7 +10,7 @@ body{overflow-x: hidden;}
 .section.info{
     height: 800px;
     width: 100%;
-    background-color: rgb(10 , 10 ,10);
+    background-color: var(--inbcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ body{overflow-x: hidden;}
     padding: 10px;
 }
 .container.info .about-section {
-    color: aliceblue;
+    color: var(--txtcolor);
     font-size: 20px;
     font-family: 'Ubuntu' , sans-serif;
 }
@@ -71,7 +71,7 @@ body{overflow-x: hidden;}
     grid-column: 1 / -1;
     background-color: rgba(255 , 255, 255, 0.1);
     border-radius: 12px;
-    color: aliceblue;
+    color: var(--txtcolor);
     font-size: 18px;
     font-weight: 900;
     text-align: center;
@@ -91,7 +91,7 @@ body{overflow-x: hidden;}
     font-weight: 900;
     cursor: pointer;
     background-color: transparent;
-    color: aliceblue;
+    color: var(--txtcolor);
     font-size: 16px;
 }
 .info-btn:hover{text-decoration: underline;}
@@ -106,7 +106,7 @@ body{overflow-x: hidden;}
 
 .curve1::after{
     content: '';
-    background-color: rgb(10 , 10 ,10);
+    background-color: var(--bcolor);
     width: 100%;
     height: 225px;
     border-top-left-radius: 100% 50%;
@@ -157,7 +157,7 @@ body{overflow-x: hidden;}
 }
 
 .wave .shape-fill {
-    fill: #0A0A0A;
+    fill: var(--inbcolor);
 }
 
 .abt-tl {

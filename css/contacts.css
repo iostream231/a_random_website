@@ -16,14 +16,14 @@
     align-items: center;
     grid : 1fr , 1fr/ 4fr;
     grid-column-gap: 5px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid var(--txtcolor);
 }
 
 .container.contacts .sm p{
     font-size: 20px;
     font-family: 'Raleway' ,sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: var(--txtcolor);
     grid-row-start: 0;
     grid-row-end: 1;
 
@@ -45,7 +45,7 @@
     grid-column: 1 / 2;
 }
 .container.contacts .sm a:nth-child(3) {
-    color: #fff;
+    color: var(--txtcolor);
     grid-column: 2 / 3;
 }
 .container.contacts .sm a:nth-child(4) {
@@ -64,7 +64,7 @@
 
 }
 .container.contacts .email > p {
-    color: #fff;
+    color: var(--txtcolor);
     font-family: 'Raleway' , sans-serif;
     font-weight: 400;
     font-size: 20px;
