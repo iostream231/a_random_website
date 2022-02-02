@@ -97,7 +97,8 @@
     width: 300px;
     flex : 0 1 200px;
     border: 10px solid none;
-    border-radius: 20%;
+    border-radius: 100%;
+    height: auto;
 }
 .container.home img:hover {
     transition: 400ms;
