@@ -4,7 +4,7 @@
 
 
 
-.navbar {
+/*.navbar {
     position: fixed;
     z-index: 999;
     background-color: var(--inbcolor);
@@ -42,20 +42,20 @@
 
 .navbar a[rel="link-nav"]::before{
     content: "";
-    display: block;
+    display: inline;
     position: absolute;
     z-index: -1;
     background-color: var(--txtcolor);
     width: 10px;
     height: 2px;
     transform: translate(4px , 19px);
-}
-.navbar a[rel="link-nav"]:hover::before{
-    transition: 300ms;
-    display: block;
-    width: 5em;
+    transition: width .2s ease-in;
 }
 
+.navbar a[rel="link-nav"]:hover::before{
+    width: 100%;
+}
+*/
 
 
 .navbar .them-dev a::before{display: none;}
@@ -175,8 +175,9 @@ canvas {
     top: 0;
     left: 0;
     cursor: pointer;
+    z-index: 1;
 }
 section {
-    z-index: 1;
+    z-index: 6;
     background-color: var(--inbcolor);
 }

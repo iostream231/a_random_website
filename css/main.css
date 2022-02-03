@@ -37,3 +37,78 @@ hr {
 a{
     cursor: pointer;
 }
+
+
+
+.navbar{
+    position: fixed;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+.navbar ul li{
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+    list-style: none;
+    cursor: pointer;
+}
+.navbar .link::before {
+    content: "";
+    height: .2em;
+    width: 1em;
+    background-color: var(--txtcolor);
+    display: inline;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.navbar .link:hover::before{
+    content: "";
+    height: .2em;
+    width: 100%;
+    display: inline;
+    background-color: var(--txtcolor);
+    position: absolute;
+    bottom: 0;
+    transition: 300ms;
+}
+.navbar .menu {display: none;}
+
+
+@media (max-width : 600px) {
+    .navbar .menu {
+        display: inline;
+        z-index: 9;
+    }
+    .navbar .link , .navbar .theme{
+        display: none;
+        margin: 10px;
+        border-bottom:1px solid var(--txtcolor) ;
+    }
+    .navbar .link::before , .navbar .link:hover::before{
+        display:  none;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        transition: .3s ease-in;
+        justify-content: flex-start;
+    }
+}

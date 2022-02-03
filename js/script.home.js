@@ -94,10 +94,12 @@ class Point {
 
 //Generating Points
 const points = [];
-for(let c =0 ; c <= 300 ; c++) {
-    let p = new Point(c * screen.availWidth / 200 + (0.5 - Math.random()) * 5 , Math.random() * screen.availWidth, {r:255 , g:255 ,b:255 , a:1} , 2);
-    p.draw(ctx);
-    points.push(p);
+if(canvas.width >= 600) {
+    for(let c =0 ; c <= 300 ; c++) {
+        let p = new Point(c * screen.availWidth / 200 + (0.5 - Math.random()) * 5 , Math.random() * screen.availWidth, {r:255 , g:255 ,b:255 , a:1} , 2);
+        p.draw(ctx);
+        points.push(p);
+}
 }
 
 

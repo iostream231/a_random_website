@@ -16,27 +16,19 @@
 </head>
 <body>
     <nav class="navbar">
-        <a data-menu="1" rel="link-menu"><i class="fas fa-bars"></i> </a>
-        <div class="link-dev"><a onclick="document.querySelector('.container.home').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a></div>
-        <div class="link-dev"><a onclick="document.querySelector('.abt-tl').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a></div>
-        <div class="link-dev"><a onclick="document.querySelector('.container.projects').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a></div>
-        <div class="link-dev"><a onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a></div>
-        <div class="them-dev"><a onclick="changeTheme()" rel="link-nav"><i class="fas fa-sun"></i></a></div>
+        <ul>
+            <li class="link"><a onclick="document.querySelector('.container.home').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="home" rel="link-nav"><i class="fa-solid fa-house"></i></i>Home</a></li>
+            <li class="link"><a onclick="document.querySelector('.container.projects').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="projects" rel="link-nav"><i class="fas fa-ellipsis-v"></i> Projects</a></li>
+            <li class="link"><a onclick="document.querySelector('.abt-tl').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="info" rel="link-nav"><i class="fas fa-info-circle"></i> Info</a></li>
+            <li class="link"><a onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;" name="contacts" rel="link-nav"><i class="fas fa-comments"></i> Contact</a></li>
+            <li class="theme"><a onclick="changeTheme()" rel="link-nav"><i class="fas fa-sun"></i></a></li>
+            <li class="menu"><a data-menu="1" rel="link-menu" onclick="showOtherLinks()"><i class="fas fa-bars"></i> </a></li>
+        </ul>
     </nav>
-    <script>
-        let other_links = [];
-        document.querySelector('a[rel="link-menu"] i').addEventListener("click" , function() {
-            if(document.querySelector('.navbar a[rel="link-nav"]').style.display === "none" || document.querySelector('.navbar a[rel="link-nav"]').style.display === "") {
-                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]');
-                for(let i = 0 ; i <= other_links.length ; i++) { other_links[i].style.display = "block";};
-            } else {
-                other_links = document.querySelectorAll('.navbar a[rel="link-nav"]')
-                for(let n = 0 ; n <= other_links.length ; n++) { other_links[n].style.display = "none";};
-            };
-        });
 
 
-    </script>
+
+    <!--HOME SECTION-->
     <div class="container home" id="home">
         <section>
             <img src="./pfp.jpg" alt="" class="img">
@@ -55,7 +47,7 @@
 
     <hr style="display: none;">
     <!--Info Section-->
-    <!--TODO : This Info Section looks *LESS* shit-->
+    <!--TODO : This Info Section looks *MORE* shit-->
     <!--TODO : Make It More Responsive-->
     <section class="section info">
         <div class="curve1"></div>
@@ -71,7 +63,7 @@
             </div>
             <div class="about-section">
                 <p>Hi I am iostream ,15 years old,from Morocco, I am interested in programing and computer science.</p>
-                <h3 style="text-align: center;text-decoration: underline;padding: 10px">Skills</h3>
+                <h3 style="text-align: center;text-decoration: underline;font-family: 'Ubuntu' , sans-serif;">Skills</h3>
                 <footer>
                     <button>JavaScript</button>
                     <button>Python</button>
