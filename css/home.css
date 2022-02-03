@@ -6,7 +6,7 @@
 
 .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     background-color: var(--inbcolor);
     width: 100%;
     padding: 10px;
@@ -87,7 +87,7 @@
 
 .container.home {
     height: 100vh;
-    background-color: var(--bcolor);
+    background-color: var(--inbcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +95,8 @@
 }
 .container.home img {
     width: 300px;
-    flex : 0 1 200px;
     border: 10px solid none;
-    border-radius: 100%;
+    border-radius: 50%;
     height: auto;
 }
 .container.home img:hover {
@@ -167,4 +166,17 @@
         transform: scale(1.2) rotate(25deg);
     }
 
+}
+section p{
+    text-align: center;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+section {
+    z-index: 1;
+    background-color: var(--inbcolor);
 }

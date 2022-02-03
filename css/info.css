@@ -10,7 +10,7 @@ body{overflow-x: hidden;}
 .section.info{
     height: 800px;
     width: 100%;
-    background-color: var(--inbcolor);
+    background-color: var(--bcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,7 @@ body{overflow-x: hidden;}
 }
 
 .wave .shape-fill {
-    fill: var(--inbcolor);
+    fill: var(--bcolor);
 }
 
 .abt-tl {
