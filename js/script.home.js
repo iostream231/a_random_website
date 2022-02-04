@@ -1,8 +1,6 @@
 /** @type {HTMLCanvasElement} */
 
 
-
-
 //canvas and context
 const canvas = document.getElementById("myCanvas");
 canvas.width = screen.availWidth - 20;
@@ -47,7 +45,6 @@ class Vector {
     draw(ctx , x , y) {
         if(x , y) {
             ctx.beginPath();
-            ctx.lineWidth = 0.5;
             ctx.strokeStyle = rgba(this.color.r , this.color.g , this.color.b , this.color.a);
             ctx.moveTo(x, y);
             ctx.lineTo(x + this.x , y + this.y);
@@ -57,7 +54,6 @@ class Vector {
             this.p1.color.a = 1;
             this.p2.color.a = 1;
             ctx.beginPath();
-            ctx.lineWidth = 0.1;
             ctx.strokeStyle = rgba(this.color.r , this.color.g , this.color.b , this.color.a);
             ctx.moveTo(this.p1.x , this.p1.y);
             ctx.lineTo(this.p1.x + this.x , this.p1.y + this.y);
@@ -94,31 +90,13 @@ class Point {
 
 //Generating Points
 const points = [];
-if(canvas.width >= 600) {
-    for(let c =0 ; c <= 300 ; c++) {
-        let p = new Point(c * screen.availWidth / 200 + (0.5 - Math.random()) * 5 , Math.random() * screen.availWidth, {r:255 , g:255 ,b:255 , a:1} , 2);
-        p.draw(ctx);
-        points.push(p);
-}
+for(let c =0 ; c <= 300 ; c++) {
+    let p = new Point(c * screen.availWidth / 200 + (0.5 - Math.random()) * 5 , Math.random() * screen.availWidth, {r:255 , g:255 ,b:255 , a:1} , 2);
+    p.draw(ctx);
+    points.push(p);
 }
 
 
-//Animating points's colors
-function animatePoints(points) {  
-    points.forEach(point => {
-        point.color.a = point.color.a + 0.5 - Math.random();
-        point.color.r =  255 - Math.random() * 255;
-    });
-
-}
-setInterval(animatePoints, 1 , points);
-
-
-//Clears The Canvas
-function clearBg() {
-    ctx.clearRect(0 , 0 , canvas.width , canvas.height);
-}
-setInterval(clearBg , 60);
 
 
 //Get Vectors Of Points Passed To it
@@ -146,15 +124,25 @@ canvas.addEventListener('mousemove',mouse => {
 
 
 //Drawing
-setInterval((points)=>{points.forEach(point =>{
-    point.draw(ctx);
-})} , 1 , points);
-setInterval(()=>{
-    targetVectors.forEach(vec=>{
-        vec.draw(ctx)
-    })
-} , 1)
+function draw() {
+    points.forEach(point=>point.draw(ctx));
+    targetVectors.forEach(vec=>vec.draw(ctx));
+}
 
+
+function main() {
+    ctx.clearRect(0 , 0 , canvas.width , canvas.height);
+
+    points.forEach(point => {
+        point.color.a += 0.5 - Math.random();
+        point.color.r = 255 - Math.random() * 255;
+    });
+
+    draw();
+}
+
+
+setInterval(main , 1000 / 60);
 
 
 //BTW THIS CODE IS EXTREMLY INEFFICIENT ITS GONNA BLOW UP YOUR PC CAUSE I SUCK AT PROGRAMMING

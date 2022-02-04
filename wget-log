@@ -1,0 +1,104 @@
+--2022-02-03 20:05:51--  http://localhost:8000/
+Resolving localhost (localhost)... ::1, 127.0.0.1
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+Retrying.
+
+--2022-02-03 20:20:52--  (try: 2)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+Retrying.
+
+--2022-02-03 20:35:54--  (try: 3)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+Retrying.
+
+--2022-02-03 20:50:58--  (try: 4)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+Retrying.
+
+--2022-02-03 21:06:02--  (try: 5)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... Read error (Connection timed out) in headers.
+Retrying.
+
+--2022-02-03 21:21:07--  (try: 6)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Resolving localhost (localhost)... ::1, 127.0.0.1
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:25:33--  (try: 7)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:27:49--  (try: 8)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:30:08--  (try: 9)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:32:26--  (try:10)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:34:46--  (try:11)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:37:05--  (try:12)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:39:25--  (try:13)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:41:44--  (try:14)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:44:03--  (try:15)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:46:22--  (try:16)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:48:42--  (try:17)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:51:01--  (try:18)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:53:20--  (try:19)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Retrying.
+
+--2022-02-03 21:55:39--  (try:20)  http://localhost:8000/
+Connecting to localhost (localhost)|::1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection timed out.
+Giving up.
+

@@ -181,3 +181,8 @@ section {
     z-index: 6;
     background-color: var(--inbcolor);
 }
+@media screen and (max-width:600px){
+    canvas{
+        display: none;
+    }
+}
