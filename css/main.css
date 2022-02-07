@@ -1,8 +1,9 @@
 :root{
-    --bcolor: rgb(40, 40, 40);
-    --inbcolor: rgb(10 , 10 , 10);
-    --txtcolor: #fff;
-
+    --bcolor: #00001C;
+    --inbcolor: #00000D;
+    --txtcolor: #9796FF;
+    --inttextcolor : #EDECFF;
+    --oppcolor:#fff;
 }
 
 *{

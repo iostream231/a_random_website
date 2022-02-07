@@ -50,28 +50,32 @@
     <!--TODO : This Info Section looks *MORE* shit-->
     <!--TODO : Make It More Responsive-->
     <section class="section info">
-        <div class="curve1"></div>
-        <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <h1 class="title-bd abt-tl">About Me</h1>
-        <div class="container info" id="info">
-            <div class="img-section">
-                <img src="./pfp.jpg" alt="some weird anime dude I found on the internet">
+        <section class="notOrgInfo">
+            <div class="curve1"></div>
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
             </div>
-            <div class="about-section">
-                <p>Hi I am iostream ,15 years old,from Morocco, I am interested in programing and computer science.</p>
-                <h3 style="text-align: center;text-decoration: underline;font-family: 'Ubuntu' , sans-serif;">Skills</h3>
+            <h1 class="title-bd abt-tl">About Me</h1>
+        </section>
+        <section class="OrgInfo">
+            <aside>
+                <img src="./pfp.jpg" alt="U but with points">
+                <h2 class="name">Iostream231</h2>
+            </aside>
+            <aside>
+                <h3>
+                    Hi There I am iostream231(An average dev you will find on wish), I am from Morocco, And I am interested in IT/Computer Science.
+                </h3>
+                <h4>My Skills Are : </h4>
                 <footer>
-                    <button>JavaScript</button>
-                    <button>Python</button>
-                    <button>C Lanuage</button>
+                    <button class="skill">JavaScript</button>
+                    <button class="skill">Python</button>
+                    <button class="skill">C Language</button>
                 </footer>
-             </div>
-            <div class="footer"><p>If you have a hint ,you are experienced or you just wanna talk feel free to : <button class="info-btn" onclick="document.querySelector('.container.contacts').scrollIntoView({behavior:'smooth'});">Contact Me</button></p></div>
-        </div>
+            </aside>
+        </section>
     </section>
     <hr>
     <!--Projects Section-->
