@@ -2,7 +2,7 @@
     --bcolor: #00001C;
     --inbcolor: #00000D;
     --txtcolor: #9796FF;
-    --inttextcolor : #EDECFF;
+    --inttxtcolor : #C4C4FF;
     --oppcolor:#fff;
 }
 
@@ -33,7 +33,13 @@ hr {
     z-index: -1;
 
 }
-.title-bd{text-align: center;margin-top: 40px;color: var(--txtcolor);}
+.title-bd{
+    text-align: center;
+    margin-top: 40px;
+    color: var(--txtcolor);
+    font-size: 1.75em;
+    margin-bottom: 40px;
+}
 
 a{
     cursor: pointer;
@@ -43,7 +49,7 @@ a{
 
 .navbar{
     position: fixed;
-    color: #fff;
+    color: var(--inttxtcolor);
     height: 30px;
     width: 100%;
     z-index: 999;
